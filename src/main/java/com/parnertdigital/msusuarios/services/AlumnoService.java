@@ -1,13 +1,14 @@
 package com.parnertdigital.msusuarios.services;
 
-import java.util.Optional;
 
 import com.parnertdigital.msusuarios.models.entity.Alumno;
 
-public interface AlumnoService {
+import services.CommonService;
 
-	public Iterable<Alumno> buscarTodos();
-	public Optional<Alumno> buscarPorId(Long id);
-	public Alumno guardar(Alumno alumno);
-	public void eliminarPorId(Long id);
+public interface AlumnoService extends CommonService<Alumno> {
+
+	/*
+	 * Se puso una dependencia de commons en pom.xml de aqui, y se borro todo de aqui
+	 *ahora jalara la libreria ms-commons creado por nosotros
+	 */
 }
